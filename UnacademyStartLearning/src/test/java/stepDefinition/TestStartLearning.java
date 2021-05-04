@@ -4,8 +4,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class TestStartLearning {
-
+public class TestStartLearning 
+{	
 	@Given("User is on start learning page")
 	public void user_is_on_start_learning_page() {
 
@@ -90,5 +90,5 @@ public class TestStartLearning {
 	public void various_courses_related_to_exam_are_displayed() {
 
 	}
-	
+
 }

@@ -1,6 +1,12 @@
-package runner;
+package pageObjectModel;
 
-public class StartLearningRunner {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class POMStartLearning 
+{
 	
 	WebDriver driver;
 	
@@ -28,7 +34,7 @@ public class StartLearningRunner {
 	@FindBy(xpath="//li[2]")
 	WebElement DisplayCourse;
 	
-	public StarLearningPOM(WebDriver driver) {
+	public POMStartLearning (WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -61,5 +67,5 @@ public class StartLearningRunner {
 	{
 		DisplayCourse.click();
 	}
-
+	
 }
