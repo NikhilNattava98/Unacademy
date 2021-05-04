@@ -1,8 +1,11 @@
 package stepDefinition;
 
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
-public class StartLearningTest {
-	
+public class TestStartLearning {
+
 	@Given("User is on start learning page")
 	public void user_is_on_start_learning_page() {
 

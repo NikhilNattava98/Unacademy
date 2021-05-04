@@ -1,7 +1,12 @@
-package runner;
+package pageObjectModel;
 
-public class StartLearningRunner {
-	
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PageObjectModel {
+
 	WebDriver driver;
 	
 	@FindBy(xpath="//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/*[1]")
@@ -28,7 +33,7 @@ public class StartLearningRunner {
 	@FindBy(xpath="//li[2]")
 	WebElement DisplayCourse;
 	
-	public StarLearningPOM(WebDriver driver) {
+	public PageObjectModel(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -61,5 +66,5 @@ public class StartLearningRunner {
 	{
 		DisplayCourse.click();
 	}
-
+	
 }
