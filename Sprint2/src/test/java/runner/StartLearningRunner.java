@@ -1,6 +1,6 @@
 package runner;
 
-import cucumber.api.CucumberOptions;
+import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 features = "src/test/resoures/feature/slearning.feature",glue= {"stepDefinition"}

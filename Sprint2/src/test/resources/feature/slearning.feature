@@ -1,30 +1,22 @@
 @StartLearning 
 Feature: StartLearning 
 
-Background: User has already logged in with valid credentials 
-and is navigated to start learning page.
-
-@URLcheck
-Scenario: check the url
-Given User is on start learning page
-Then check the url of the page
-
 @AddCourse
 Scenario: Successfully add courses in My goals 
 Given User is on start learning page
-When user selects all valid data 
+When user selects the courses he wants to add
 Then course gets added to the My goals
 
-@CourseDes
+@CourseLanguage
 Scenario: Show the course description of selected course
 Given User is on start learning page
 When user clicks on the course
-Then user is navigated to course description page
+Then user is navigated to select the language
 
 @GetSubs
 Scenario: Show different subscription options
 Given User is on start learning page 
-When user clicks on the course 
+When user clicks on the course in mygoals
 Then user is navigated to course description page 
 And when user clicks on get subscription 
 Then user is shown different subscription plans
