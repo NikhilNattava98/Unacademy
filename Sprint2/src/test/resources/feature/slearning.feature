@@ -1,45 +1,58 @@
-Feature: Start Learning
+@StartLearning 
+Feature: StartLearning 
 
-Scenario: User should be able to select start learning
-Given User is on the Unacademy page
-When User selects start learning
-Then The start learning page is displayed
+Background: User has already logged in with valid credentials 
+and is navigated to start learning page.
 
-Scenario: User should be able to add the course from start learning
-Given User on the start learning page
-When User selects the course
-And User should be able to select the language
-Then The course should be displayed in My goals
+@URLcheck
+Scenario: check the url
+Given User is on start learning page
+Then check the url of the page
 
-Scenario: User should be able to select the type of exam
-Given User on start learning page
-When User selects the type of exam
-Then It is navigated to the related course
+@AddCourse
+Scenario: Successfully add courses in My goals 
+Given User is on start learning page
+When user selects all valid data 
+Then course gets added to the My goals
 
-Scenario: User should be able to select the course from My goals
-Given User has added the courses to My goals
-When User selects the course from my goals
-Then The subscription option is displayed
+@CourseDes
+Scenario: Show the course description of selected course
+Given User is on start learning page
+When user clicks on the course
+Then user is navigated to course description page
 
-Scenario: User should be able to select the subscription
-Given User is in the subscription page
-When User selects the subscribe option
-Then The respective plans for subscription is displayed 
+@GetSubs
+Scenario: Show different subscription options
+Given User is on start learning page 
+When user clicks on the course 
+Then user is navigated to course description page 
+And when user clicks on get subscription 
+Then user is shown different subscription plans
 
-Scenario: User shoul be able to select the subscription plans
-Given User in the subscription plans page
-When User selects any one of the subscription plan
-And selects the proceed to pay option
-Then The payment is done accordingly
+@Warn
+Scenario: Show alert page
+Given User is on start learning page
+When user clicks on the remove sign on course
+Then show the alert msg
 
-Scenario: User should be able to select live classes
-Given User is in the subscribtion page
-When User scrolls down
-And selects the live classes
-Then The live video classes are given
+@CancelRemoval
+Scenario: Cancel the removal of course from My goals
+Given User is on start learning page
+When user clicks on the remove sign on course
+Then show the alert msg
+And when user clicks on cancel button
+Then the course does not get removed
 
-Scenario: User should be able to select the course information
-Given User is in the subscribtion page
-When User scrolls down
-And selects the required details of the course
-Then The details of the course are displayed
+@RemoveCourse
+Scenario: Remove the course from My goals
+Given User is on start learning page
+When user clicks on the remove sign on course
+Then show the alert msg
+And when user clicks on remove button
+Then the course gets removed 
+
+@DisplayCourse
+Scenario: Display various courses for exam type
+Given User is on start learning page
+When user clicks on the exam type
+Then various courses related to exam are displayed 
