@@ -1,9 +1,7 @@
 package stepDefinition;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,15 +37,13 @@ public class TestStartLearning
 	@When("user selects the courses he wants to add")
 	public void user_selects_the_courses_he_wants_to_add() throws Throwable
 	{
-	/*	Thread.sleep(3000);
+		Thread.sleep(3000);
 		POMStartLearning obj = PageFactory.initElements(driver, POMStartLearning.class);
-	//	WebDriverWait Mywait=new WebDriverWait(driver,10);
-    //    Mywait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)")));
+		WebDriverWait Mywait=new WebDriverWait(driver,10);
+        Mywait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)")));
 		
 		obj.SelectCourse();
-		
-		Thread.sleep(8000);
-		*/
+	/*
 		Thread.sleep(5000);
 		
 		WebElement e = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]"));
@@ -57,6 +53,7 @@ public class TestStartLearning
 		
 		driver.findElement(By.cssSelector("#DrawerPaper > div.LanguageCard__LanguageCardContainer-sc-113g7mt-0.cSMwoa")).click();
 		Thread.sleep(5000);
+       */ 
 
 	}
 	
