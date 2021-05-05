@@ -10,7 +10,7 @@ public class POMStartLearning
 	
 	WebDriver driver;
 	
-	@FindBy(xpath="//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/*[1]")
+	@FindBy(css="body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)")
 	WebElement SelectCourse;
 	
 	@FindBy(xpath="//div[@class='LanguageCard__LanguageCardContainer-sc-113g7mt-0 ePFkQs']")
@@ -48,7 +48,7 @@ public class POMStartLearning
 	}
 	public void SubscribeCourse()
 	{
-		CourseInMygoals.click();
+		//CourseInMygoals.click();
 		Subscription.click();
 	}
 	public void Warning()
@@ -67,5 +67,5 @@ public class POMStartLearning
 	{
 		DisplayCourse.click();
 	}
-	
+
 }
