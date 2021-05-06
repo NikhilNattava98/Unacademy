@@ -23,6 +23,7 @@ public class TestAddCourse
 	WebDriver driver;
 	
 	LoginPOM obj;
+	POMStartLearning obj1;
 	
 	@Test(priority=1)
 	@Given("^User is successfully logged into his account$")
@@ -91,7 +92,7 @@ public class TestAddCourse
 	 @When("^User should enter valid otp$")
 	 public void user_should_enter_valid_otp() throws Throwable 
 	 {
-		 Thread.sleep(20000);
+		 Thread.sleep(30000);
 		 obj.otpNumber();
 	 }
 	 
@@ -100,6 +101,7 @@ public class TestAddCourse
 	 public void click_on_verify_otp_button() throws Throwable 
 	 {
 		 obj.loginOtp();
+		 Thread.sleep(10000);
 	    
 	 }
 	 
@@ -107,11 +109,12 @@ public class TestAddCourse
 	 @Then("^User should be able to login successfully$")
 	 public void user_should_be_able_to_login_successfully() throws Throwable 
 	 {
+		 Thread.sleep(5000);;
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 WebElement Element = driver.findElement(By.cssSelector("body > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > section:nth-child(2) > div:nth-child(1) > div:nth-child(6) > a:nth-child(1) > button:nth-child(1)"));	
 		 js.executeScript("arguments[0].scrollIntoView();", Element);
-	     WebDriverWait Mywait3=new WebDriverWait(driver,10);
-	     Mywait3.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > section:nth-child(2) > div:nth-child(1) > div:nth-child(6) > a:nth-child(1) > button:nth-child(1)")));
+	     WebDriverWait Mywait6=new WebDriverWait(driver,10);
+	     Mywait6.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > section:nth-child(2) > div:nth-child(1) > div:nth-child(6) > a:nth-child(1) > button:nth-child(1)")));
 		 driver.findElement(By.cssSelector("body > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > section:nth-child(2) > div:nth-child(1) > div:nth-child(6) > a:nth-child(1) > button:nth-child(1)")).click();
 		 Thread.sleep(5000);
 	 }
@@ -161,7 +164,134 @@ public class TestAddCourse
 		POMStartLearning obj = PageFactory.initElements(driver, POMStartLearning.class);
     	obj.CourseLanguage();
 		Thread.sleep(8000);
-		driver.close();
+	}
+	
+	@Test(priority=10)
+	@When("^user clicks on the exam type$")
+	public void user_clicks_on_the_exam_type() throws Throwable 
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement Element = driver.findElement(By.cssSelector("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > svg:nth-child(1)"));	
+		js.executeScript("arguments[0].scrollIntoView();", Element);
+	   // WebDriverWait Mywait7=new WebDriverWait(driver,10);
+	   //Mywait7.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1) > p:nth-child(1)")));
+	   //driver.findElement(By.cssSelector("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1) > p:nth-child(1)")).click();
+		Thread.sleep(5000);
+		
+		//Thread.sleep(3000);
+		//obj1.DisplayCourse();
+	}
+
+	@Test(priority=11)
+	@Then("^various courses related to exam are displayed$")
+	public void various_courses_related_to_exam_are_displayed() throws Throwable 
+	{
+		Thread.sleep(3000);
+	}
+
+	@Test(priority=12)
+	@When("^user clicks on the course$")
+	public void user_clicks_on_the_course() throws Throwable 
+	{
+		WebDriverWait Mywait5=new WebDriverWait(driver,5);
+        Mywait5.until(ExpectedConditions.elementToBeClickable(By.xpath("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > svg:nth-child(1)")));
+		driver.findElement(By.cssSelector("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > svg:nth-child(1)")).click();
+			
+	}
+
+	@Test(priority=13)
+	@Then("^user is navigated to select the language$")
+	public void user_is_navigated_to_select_the_language() throws Throwable 
+	{
+		Thread.sleep(3000);
+		obj1.CourseLanguage();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement Element = driver.findElement(By.xpath("//a[@href='/explore#UQFJD']//div[@class='GoalGroupNav__Count-kdz8jf-4 jAoOXW'][normalize-space()='4']"));	
+		js.executeScript("arguments[0].scrollIntoView();", Element);
+		
+	}
+
+	@Test(priority=14)
+	@When("^user clicks on the remove sign on course$")
+	public void user_clicks_on_the_remove_sign_on_course() throws Throwable 
+	{
+		Thread.sleep(5000);
+		obj1.Warning();
+	}
+
+	@Test(priority=15)
+	@Then("^show the alert msg$")
+	public void show_the_alert_msg() throws Throwable 
+	{
+		Thread.sleep(5000);
+	}
+
+	@Test(priority=16)
+	@Then("^when user clicks on cancel button$")
+	public void when_user_clicks_on_cancel_button() throws Throwable 
+	{
+		Thread.sleep(3000);
+		obj1.CancelRemoval();
+	}
+
+	@Test(priority=17)
+	@Then("^the course does not get removed$")
+	public void the_course_does_not_get_removed() throws Throwable 
+	{
+		Thread.sleep(3000);
+	}
+
+	@Test(priority=18)
+	@Then("^when user clicks on remove button$")
+	public void when_user_clicks_on_remove_button() throws Throwable 
+	{
+		Thread.sleep(3000);
+		obj1.CourseRemoval();
+		Thread.sleep(5000);
+	}
+
+	@Test(priority=19)
+	@Then("^the course gets removed$")
+	public void the_course_gets_removed() throws Throwable 
+	{
+		Thread.sleep(5000);
+	}
+
+	@Test(priority=20)
+	@When("^user clicks on the course in mygoals$")
+	public void user_clicks_on_the_course_in_mygoals() throws Throwable 
+	{
+		Thread.sleep(5000);
+		obj1.CourseInMygoals();
+	}
+
+	@Test(priority=21)
+	@Then("^user is navigated to course description page$")
+	public void user_is_navigated_to_course_description_page() throws Throwable 
+	{
+		Thread.sleep(5000);
+	}
+
+	@Test(priority=22)
+	@Then("^when user clicks on get subscription$")
+	public void when_user_clicks_on_get_subscription() throws Throwable 
+	{
+		Thread.sleep(5000);
+	}
+	@Test(priority=23)
+	@Then("^user is shown different subscription plans$")
+	public void user_is_shown_different_subscription_plans() throws Throwable 
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement Element = driver.findElement(By.cssSelector("button[class='Button__StyledButton-dg3jck-0 hLfEGT PageHead__SubButton-sc-1xvuona-6 ioigXL']"));	
+		js.executeScript("arguments[0].scrollIntoView();", Element);
+	    WebDriverWait Mywait4=new WebDriverWait(driver,10);
+	    Mywait4.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[class='Button__StyledButton-dg3jck-0 hLfEGT PageHead__SubButton-sc-1xvuona-6 ioigXL']")));
+		driver.findElement(By.cssSelector("button[class='Button__StyledButton-dg3jck-0 hLfEGT PageHead__SubButton-sc-1xvuona-6 ioigXL']")).click();
+		
+		//obj1.SubscribeCourse();
+		Thread.sleep(5000);
 	}
 
 }

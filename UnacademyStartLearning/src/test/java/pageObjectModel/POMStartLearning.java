@@ -31,7 +31,7 @@ public class POMStartLearning
 	@FindBy(xpath="//body/div[3]/div[3]/div[1]/div[1]/div[1]/button[1]")
 	WebElement CourseRemoval;
 	
-	@FindBy(xpath="//li[2]")
+	@FindBy(xpath="//h4[normalize-space()='Govt Exams']")
 	WebElement DisplayCourse;
 	
 	public POMStartLearning (WebDriver driver) {
@@ -46,7 +46,7 @@ public class POMStartLearning
 	{
 		CourseLanguage.click();
 	}
-	public void CourseSelected()
+	public void CourseInMygoals()
 	{
 		CourseInMygoals.click();
 	}

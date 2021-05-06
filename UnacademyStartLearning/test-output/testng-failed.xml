@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runner.RunnerStartLearning">
+      <class name="stepDefinition.TestAddCourse">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature"/>
-          <include name="tearDownClass"/>
+          <include name="user_clicks_on_the_course_in_mygoals"/>
+          <include name="user_clicks_on_the_exam_type"/>
+          <include name="user_clicks_on_the_course"/>
+          <include name="user_is_navigated_to_select_the_language"/>
+          <include name="user_clicks_on_the_remove_sign_on_course"/>
+          <include name="user_should_enter_valid_otp"/>
+          <include name="when_user_clicks_on_cancel_button"/>
+          <include name="user_is_shown_different_subscription_plans"/>
+          <include name="when_user_clicks_on_remove_button"/>
         </methods>
-      </class> <!-- runner.RunnerStartLearning -->
+      </class> <!-- stepDefinition.TestAddCourse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
