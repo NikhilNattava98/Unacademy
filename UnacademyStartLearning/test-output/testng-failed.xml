@@ -6,7 +6,8 @@
       <class name="stepDefinition.TestAddCourse">
         <methods>
           <include name="user_clicks_on_the_course_in_mygoals"/>
-          <include name="user_clicks_on_the_exam_type"/>
+          <include name="user_selects_the_courses_he_wants_to_add"/>
+          <include name="user_should_be_able_to_login_successfully"/>
           <include name="user_clicks_on_the_course"/>
           <include name="user_is_navigated_to_select_the_language"/>
           <include name="user_clicks_on_the_remove_sign_on_course"/>
@@ -14,6 +15,7 @@
           <include name="when_user_clicks_on_cancel_button"/>
           <include name="user_is_shown_different_subscription_plans"/>
           <include name="when_user_clicks_on_remove_button"/>
+          <include name="course_gets_added_to_the_my_goals"/>
         </methods>
       </class> <!-- stepDefinition.TestAddCourse -->
     </classes>
