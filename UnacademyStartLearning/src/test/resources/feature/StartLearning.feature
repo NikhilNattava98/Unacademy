@@ -1,5 +1,14 @@
 @StartLearning 
-Feature: StartLearning 
+Feature: StartLearning
+
+Background: User is on Unacademy Home page
+Given User is successfully logged into his account
+When User selects country code
+And User enters registered phone number
+And User click login button
+And User should enter valid otp
+And click on verify otp button
+Then User should be able to login successfully
 
 @AddCourse
 Scenario: Successfully add courses in My goals 

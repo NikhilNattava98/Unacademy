@@ -46,9 +46,12 @@ public class POMStartLearning
 	{
 		CourseLanguage.click();
 	}
+	public void CourseSelected()
+	{
+		CourseInMygoals.click();
+	}
 	public void SubscribeCourse()
 	{
-		//CourseInMygoals.click();
 		Subscription.click();
 	}
 	public void Warning()
@@ -67,5 +70,5 @@ public class POMStartLearning
 	{
 		DisplayCourse.click();
 	}
-
+	
 }

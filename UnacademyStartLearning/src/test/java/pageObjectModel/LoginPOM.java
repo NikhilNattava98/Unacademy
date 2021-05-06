@@ -38,7 +38,7 @@ public class LoginPOM
 	}
 	public void setLoginButton() throws Throwable {
 		loginbutton.click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 	}
 	public void setCountryCode() throws Throwable
 	{
@@ -56,9 +56,9 @@ public class LoginPOM
 	{
 		login.click();
 	}
-	public void otpNumber(String n) throws Throwable
+	public void otpNumber() throws Throwable
 	{
-		otpNo.sendKeys(n);
+		otpNo.sendKeys();
 	}
 	public void loginOtp() throws Throwable
 	{
