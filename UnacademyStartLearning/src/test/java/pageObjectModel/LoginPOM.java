@@ -27,7 +27,7 @@ public class LoginPOM
 	@FindBy(xpath="//input[@placeholder='One time password']")
 	WebElement otpNo;
 	
-	@FindBy(xpath="//button[normalize-space()='Verify OTP']")
+	@FindBy(xpath="/html[1]/body[1]/div[3]/div[3]/div[2]/div[2]/button[1]")
 	WebElement logOtp;
 	
 	public  LoginPOM(WebDriver driver)
@@ -60,7 +60,7 @@ public class LoginPOM
 	{
 		otpNo.sendKeys();
 	}
-	public void loginOtp() throws Throwable
+	public void VerifyOtp() throws Throwable
 	{
 		Thread.sleep(5000);
 		logOtp.click();

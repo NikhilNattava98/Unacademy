@@ -1,7 +1,7 @@
 @StartLearning 
 Feature: StartLearning
-
-Background: User is on Unacademy Home page
+@Login
+Scenario: User is on Unacademy Home page
 Given User is successfully logged into his account
 When User selects country code
 And User enters registered phone number
@@ -16,17 +16,19 @@ Given User is on start learning page
 When user selects the courses he wants to add
 Then course gets added to the My goals
 
-@DisplayCourse
-Scenario: Display various courses for exam type
-Given User is on start learning page
-When user clicks on the exam type
-Then various courses related to exam are displayed
-
 @CourseLanguage
 Scenario: Show the course description of selected course
 Given User is on start learning page
 When user clicks on the course
 Then user is navigated to select the language
+
+@GetSubs
+Scenario: Show different subscription options
+Given User is on start learning page 
+When user clicks on the course in mygoals
+Then user is navigated to course description page 
+And when user clicks on get subscription 
+Then user is shown different subscription plans
 
 @Warn
 Scenario: Show alert page
@@ -48,12 +50,10 @@ Given User is on start learning page
 When user clicks on the remove sign on course
 Then show the alert msg
 And when user clicks on remove button
-Then the course gets removed
+Then the course gets removed 
 
-@GetSubs
-Scenario: Show different subscription options
-Given User is on start learning page 
-When user clicks on the course in mygoals
-Then user is navigated to course description page 
-And when user clicks on get subscription 
-Then user is shown different subscription plans
+@DisplayCourse
+Scenario: Display various courses for exam type
+Given User is on start learning page
+When user clicks on the exam type
+Then various courses related to exam are displayed

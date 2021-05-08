@@ -22,13 +22,13 @@ public class POMStartLearning
 	@FindBy(xpath="//button[@class='Button__StyledButton-dg3jck-0 hLfEGT PageHead__SubButton-sc-1xvuona-6 ioigXL']")
 	WebElement Subscription;
 	
-	@FindBy(xpath="//body/div[3]/div[3]/div[1]/div[1]")
+	@FindBy(xpath="//div[@id='my-goals']//div[2]//div[1]//div[1]")
 	WebElement Warning;
 	
-	@FindBy(xpath="//body/div[3]/div[3]/div[1]/div[1]/div[1]/button[2]")
+	@FindBy(xpath="//body/div[4]/div[3]/div[1]/div[1]/div[1]/button[2]")
 	WebElement CancelRemoval;
 	
-	@FindBy(xpath="//body/div[3]/div[3]/div[1]/div[1]/div[1]/button[1]")
+	@FindBy(xpath="//body/div[4]/div[3]/div[1]/div[1]/div[1]/button[1]")
 	WebElement CourseRemoval;
 	
 	@FindBy(xpath="//h4[normalize-space()='Govt Exams']")
