@@ -1,0 +1,446 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User is on Unacademy Home page",
+        "description": "",
+        "id": "startlearning;user-is-on-unacademy-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is successfully logged into his account",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User selects country code",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enters registered phone number",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User click login button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User should enter valid otp",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "click on verify otp button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User should be able to login successfully",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Successfully add courses in My goals",
+        "description": "",
+        "id": "startlearning;successfully-add-courses-in-my-goals",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User is on start learning page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "user selects the courses he wants to add",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "course gets added to the My goals",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@AddCourse"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Show the course description of selected course",
+        "description": "",
+        "id": "startlearning;show-the-course-description-of-selected-course",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "User is on start learning page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "user clicks on the course",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "user is navigated to select the language",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@CourseLanguage"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Show different subscription options",
+        "description": "",
+        "id": "startlearning;show-different-subscription-options",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "User is on start learning page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "user clicks on the course in mygoals",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "user is navigated to course description page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "when user clicks on get subscription",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "user is shown different subscription plans",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@GetSubs"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Show alert page",
+        "description": "",
+        "id": "startlearning;show-alert-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "User is on start learning page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "user clicks on the remove sign on course",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "show the alert msg",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@Warn"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Cancel the removal of course from My goals",
+        "description": "",
+        "id": "startlearning;cancel-the-removal-of-course-from-my-goals",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "User is on start learning page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "user clicks on the remove sign on course",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "show the alert msg",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "when user clicks on cancel button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "the course does not get removed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 39,
+            "name": "@CancelRemoval"
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "Remove the course from My goals",
+        "description": "",
+        "id": "startlearning;remove-the-course-from-my-goals",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 49,
+            "name": "User is on start learning page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "user clicks on the remove sign on course",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 51,
+            "name": "show the alert msg",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 52,
+            "name": "when user clicks on remove button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 53,
+            "name": "the course gets removed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 47,
+            "name": "@RemoveCourse"
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Display various courses for exam type",
+        "description": "",
+        "id": "startlearning;display-various-courses-for-exam-type",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 57,
+            "name": "User is on start learning page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 58,
+            "name": "user clicks on the exam type",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 59,
+            "name": "various courses related to exam are displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 55,
+            "name": "@DisplayCourse"
+          }
+        ]
+      }
+    ],
+    "name": "StartLearning",
+    "description": "",
+    "id": "startlearning",
+    "keyword": "Feature",
+    "uri": "src/test/resources/feature/StartLearning.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@StartLearning"
+      }
+    ]
+  }
+]

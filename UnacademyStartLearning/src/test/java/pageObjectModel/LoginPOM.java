@@ -27,7 +27,7 @@ public class LoginPOM
 	@FindBy(xpath="//input[@placeholder='One time password']")
 	WebElement otpNo;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[3]/div[3]/div[2]/div[2]/button[1]")
+	@FindBy(xpath="//button[normalize-space()='Verify OTP']")
 	WebElement logOtp;
 	
 	public  LoginPOM(WebDriver driver)

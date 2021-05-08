@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="8" tests="8" time="0">
+<testcase classname="StartLearning" name="User is on Unacademy Home page" time="0">
+<skipped><![CDATA[Given User is successfully logged into his account..........................undefined
+When User selects country code..............................................undefined
+And User enters registered phone number.....................................undefined
+And User click login button.................................................undefined
+And User should enter valid otp.............................................undefined
+And click on verify otp button..............................................undefined
+Then User should be able to login successfully..............................undefined
+]]></skipped>
+</testcase>
+<testcase classname="StartLearning" name="Successfully add courses in My goals" time="0">
+<skipped><![CDATA[Given User is on start learning page........................................undefined
+When user selects the courses he wants to add...............................undefined
+Then course gets added to the My goals......................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="StartLearning" name="Show the course description of selected course" time="0">
+<skipped><![CDATA[Given User is on start learning page........................................undefined
+When user clicks on the course..............................................undefined
+Then user is navigated to select the language...............................undefined
+]]></skipped>
+</testcase>
+<testcase classname="StartLearning" name="Show different subscription options" time="0">
+<skipped><![CDATA[Given User is on start learning page........................................undefined
+When user clicks on the course in mygoals...................................undefined
+Then user is navigated to course description page...........................undefined
+And when user clicks on get subscription....................................undefined
+Then user is shown different subscription plans.............................undefined
+]]></skipped>
+</testcase>
+<testcase classname="StartLearning" name="Show alert page" time="0">
+<skipped><![CDATA[Given User is on start learning page........................................undefined
+When user clicks on the remove sign on course...............................undefined
+Then show the alert msg.....................................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="StartLearning" name="Cancel the removal of course from My goals" time="0">
+<skipped><![CDATA[Given User is on start learning page........................................undefined
+When user clicks on the remove sign on course...............................undefined
+Then show the alert msg.....................................................undefined
+And when user clicks on cancel button.......................................undefined
+Then the course does not get removed........................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="StartLearning" name="Remove the course from My goals" time="0">
+<skipped><![CDATA[Given User is on start learning page........................................undefined
+When user clicks on the remove sign on course...............................undefined
+Then show the alert msg.....................................................undefined
+And when user clicks on remove button.......................................undefined
+Then the course gets removed................................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="StartLearning" name="Display various courses for exam type" time="0">
+<skipped><![CDATA[Given User is on start learning page........................................undefined
+When user clicks on the exam type...........................................undefined
+Then various courses related to exam are displayed..........................undefined
+]]></skipped>
+</testcase>
+</testsuite>
