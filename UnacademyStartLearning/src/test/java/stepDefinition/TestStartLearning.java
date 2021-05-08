@@ -17,7 +17,7 @@ import cucumber.api.java.en.When;
 import pageObjectModel.LoginPOM;
 import pageObjectModel.POMStartLearning;
 
-public class TestAddCourse 
+public class TestStartLearning 
 {	
 	WebDriver driver;
 	
