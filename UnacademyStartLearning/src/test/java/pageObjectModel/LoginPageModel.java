@@ -5,8 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPOM 
-{
+public class LoginPageModel {
+
+
 	WebDriver driver;
 		
 	@FindBy(xpath="//button[contains(text(),'Login')]")
@@ -25,12 +26,12 @@ public class LoginPOM
 	WebElement login;
 		
 	@FindBy(xpath="//input[@placeholder='One time password']")
-	WebElement otpNo;
+	WebElement getOTP;
 	
 	@FindBy(xpath="//button[normalize-space()='Verify OTP']")
 	WebElement logOtp;
 	
-	public  LoginPOM(WebDriver driver)
+	public  LoginPageModel(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -56,14 +57,15 @@ public class LoginPOM
 	{
 		login.click();
 	}
-	public void otpNumber() throws Throwable
+	public void otpNumber(String s) throws Throwable
 	{
-		otpNo.sendKeys();
+		getOTP.sendKeys(s);
 	}
 	public void VerifyOtp() throws Throwable
 	{
 		Thread.sleep(5000);
 		logOtp.click();
 	}
-			
+	
+	
 }

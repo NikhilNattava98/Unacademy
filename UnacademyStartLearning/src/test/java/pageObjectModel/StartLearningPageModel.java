@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class POMStartLearning 
+public class StartLearningPageModel 
 {
 	
 	WebDriver driver;
 	
-	@FindBy(css="body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)")
+	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]")
 	WebElement SelectCourse;
 	
 	@FindBy(xpath="//div[@class='LanguageCard__LanguageCardContainer-sc-113g7mt-0 ePFkQs']")
@@ -34,7 +34,7 @@ public class POMStartLearning
 	@FindBy(xpath="//h4[normalize-space()='Govt Exams']")
 	WebElement DisplayCourse;
 	
-	public POMStartLearning (WebDriver driver) {
+	public StartLearningPageModel (WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

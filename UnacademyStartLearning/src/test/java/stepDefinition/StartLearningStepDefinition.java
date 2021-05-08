@@ -14,10 +14,10 @@ import org.testng.annotations.Test;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pageObjectModel.LoginPOM;
-import pageObjectModel.POMStartLearning;
+import pageObjectModel.LoginPageModel;
+import pageObjectModel.StartLearningPageModel;
 
-public class AddCourseTest 
+public class StartLearningStepDefinition
 {	
 	WebDriver driver;
 	
@@ -32,7 +32,7 @@ public class AddCourseTest
 			
 		//loading page factory
 		
-		//LoginPOM obj = PageFactory.initElements(driver, LoginPOM.class );
+		//LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
 			
 		//loading website
 			driver.get("https://unacademy.com/");
@@ -54,7 +54,7 @@ public class AddCourseTest
 	 @When("^User selects country code$")
 	 public void user_selects_country_code() throws Throwable 
 	 {
-		 LoginPOM obj = PageFactory.initElements(driver, LoginPOM.class );
+		 LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
 		 obj.setLoginButton();
 		 obj.setCountryCode(); 
 		 obj.countryToSelect();
@@ -65,7 +65,7 @@ public class AddCourseTest
 	 @When("^User enters registered phone number$")
 	 public void user_enters_registered_phone_number() throws Throwable 
 	 {
-		 LoginPOM obj = PageFactory.initElements(driver, LoginPOM.class );
+		 LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
 		 obj.getPhoneNo("6281863628");
 		 
 
@@ -76,7 +76,7 @@ public class AddCourseTest
 	 @When("^User click login button$")
 	 public void user_click_login_button() throws Throwable 
 	 {
-		 LoginPOM obj = PageFactory.initElements(driver, LoginPOM.class );
+		 LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
 		 obj.loginPage();
 	 }
 	 
@@ -84,22 +84,20 @@ public class AddCourseTest
 	 @When("^User should enter valid otp$")
 	 public void user_should_enter_valid_otp() throws Throwable 
 	 {
-		 LoginPOM obj = PageFactory.initElements(driver, LoginPOM.class );
-		 Thread.sleep(25000);
-		 obj.otpNumber();
+		 LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
+		// Thread.sleep(25000);
+		  WebDriverWait Mywait0=new WebDriverWait(driver,5);
+		  Mywait0.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='One time password']")));
+		 obj.otpNumber("733327");
 	 }
 	 
 	 @Test(priority=6)
 	 @When("^click on verify otp button$")
 	 public void click_on_verify_otp_button() throws Throwable 
 	 {
-		 Thread.sleep(3000);
-		 LoginPOM obj = PageFactory.initElements(driver, LoginPOM.class );
+		 LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
 		 obj.VerifyOtp();
-		 
-		 Thread.sleep(5000);
-		// driver.findElement(By.xpath("//button[contains(text(),'Verify OTP')]")).click();
-		 //Thread.sleep(3000);
+		 Thread.sleep(3000);
 	    
 	 }
 	 
@@ -122,7 +120,7 @@ public class AddCourseTest
 	 }
 
 	
-	@Test(priority=8)
+	@Test(priority=1)
 	@Given("User is on start learning page")
 	public void user_is_on_start_learning_page() throws Throwable
 	{
@@ -131,32 +129,32 @@ public class AddCourseTest
 
 	}
 
-	@Test(priority=9)
+	@Test(priority=2)
 	@When("user selects the courses he wants to add")
 	public void user_selects_the_courses_he_wants_to_add() throws Throwable
 	{
 		
-		POMStartLearning obj = PageFactory.initElements(driver, POMStartLearning.class);
-		WebDriverWait Mywait8=new WebDriverWait(driver,10);
-        Mywait8.until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)")));
-		
+		StartLearningPageModel obj = PageFactory.initElements(driver, StartLearningPageModel.class);
+		WebDriverWait Mywait8=new WebDriverWait(driver,5);
+        Mywait8.until(ExpectedConditions.elementToBeClickable(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]")));
+        
 		obj.SelectCourse();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 
 	}
 	
-	@Test(priority=10)
+	@Test(priority=3)
 	@Then("course gets added to the My goals")
 	public void course_gets_added_to_the_my_goals() throws Throwable
 	{
 		
 		Thread.sleep(3000);
-		POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
     	obj1.CourseLanguage();
 		Thread.sleep(3000);
 	}
 	
-	@Test(priority=11)
+	@Test(priority=2)
 	@When("^user clicks on the exam type$")
 	public void user_clicks_on_the_exam_type() throws Throwable 
 	{
@@ -174,14 +172,14 @@ public class AddCourseTest
 		//obj1.DisplayCourse();
 	}
 
-	@Test(priority=12)
+	@Test(priority=3)
 	@Then("^various courses related to exam are displayed$")
 	public void various_courses_related_to_exam_are_displayed() throws Throwable 
 	{
 		Thread.sleep(1000);
 	}
 
-	@Test(priority=13)
+	@Test(priority=2)
 	@When("^user clicks on the course$")
 	public void user_clicks_on_the_course() throws Throwable 
 	{
@@ -191,7 +189,7 @@ public class AddCourseTest
 			
 	}
 
-	@Test(priority=14)
+	@Test(priority=3)
 	@Then("^user is navigated to select the language$")
 	public void user_is_navigated_to_select_the_language() throws Throwable 
 	{
@@ -200,7 +198,7 @@ public class AddCourseTest
         //Mywait13.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[class='LanguageCard__LanguageCardContainer-sc-113g7mt-0 ePFkQs']")));
 		//driver.findElement(By.cssSelector("div[class='LanguageCard__LanguageCardContainer-sc-113g7mt-0 ePFkQs']")).click();
 		
-		POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		Thread.sleep(5000);
 		obj1.CourseLanguage();
 		
@@ -211,74 +209,74 @@ public class AddCourseTest
 		
 	}
 
-	@Test(priority=15)
+	@Test(priority=2)
 	@When("^user clicks on the remove sign on course$")
 	public void user_clicks_on_the_remove_sign_on_course() throws Throwable 
 	{
-		POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		Thread.sleep(5000);
 		obj1.Warning();
 	}
 
-	@Test(priority=16)
+	@Test(priority=3)
 	@Then("^show the alert msg$")
 	public void show_the_alert_msg() throws Throwable 
 	{
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=17)
+	@Test(priority=4)
 	@Then("^when user clicks on cancel button$")
 	public void when_user_clicks_on_cancel_button() throws Throwable 
 	{
-		POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		Thread.sleep(3000);
 		obj1.CancelRemoval();
 	}
 
-	@Test(priority=18)
+	@Test(priority=5)
 	@Then("^the course does not get removed$")
 	public void the_course_does_not_get_removed() throws Throwable 
 	{
-		POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		Thread.sleep(5000);
 		obj1.Warning();
 	}
 
-	@Test(priority=19)
+	@Test(priority=4)
 	@Then("^when user clicks on remove button$")
 	public void when_user_clicks_on_remove_button() throws Throwable 
 	{
 		Thread.sleep(3000);
-		POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		obj1.CourseRemoval();
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=20)
+	@Test(priority=5)
 	@Then("^the course gets removed$")
 	public void the_course_gets_removed() throws Throwable 
 	{
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=21)
+	@Test(priority=2)
 	@When("^user clicks on the course in mygoals$")
 	public void user_clicks_on_the_course_in_mygoals() throws Throwable 
 	{
-		POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		Thread.sleep(5000);
 		obj1.CourseInMygoals();
 	}
 
-	@Test(priority=22)
+	@Test(priority=3)
 	@Then("^user is navigated to course description page$")
 	public void user_is_navigated_to_course_description_page() throws Throwable 
 	{
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=23)
+	@Test(priority=4)
 	@Then("^when user clicks on get subscription$")
 	public void when_user_clicks_on_get_subscription() throws Throwable 
 	{
@@ -293,7 +291,7 @@ public class AddCourseTest
 		//POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
 		//obj1.SubscribeCourse();
 	}
-	@Test(priority=24)
+	@Test(priority=5)
 	@Then("^user is shown different subscription plans$")
 	public void user_is_shown_different_subscription_plans() throws Throwable 
 	{
