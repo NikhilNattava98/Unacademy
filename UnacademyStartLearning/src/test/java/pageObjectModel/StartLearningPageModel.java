@@ -28,7 +28,7 @@ public class StartLearningPageModel
 	@FindBy(xpath="//body/div[4]/div[3]/div[1]/div[1]/div[1]/button[2]")
 	WebElement CancelRemoval;
 	
-	@FindBy(xpath="//body/div[4]/div[3]/div[1]/div[1]/div[1]/button[1]")
+	@FindBy(xpath="/html[1]/body[1]/div[4]/div[3]/div[1]/div[1]/div[1]/button[1]")
 	WebElement CourseRemoval;
 	
 	@FindBy(xpath="//h4[normalize-space()='Govt Exams']")

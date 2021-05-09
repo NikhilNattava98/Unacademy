@@ -88,7 +88,7 @@ public class StartLearningStepDefinition
 		// Thread.sleep(25000);
 		  WebDriverWait Mywait0=new WebDriverWait(driver,5);
 		  Mywait0.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='One time password']")));
-		 obj.otpNumber("733327");
+		 obj.otpNumber("826178");
 	 }
 	 
 	 @Test(priority=6)
@@ -119,17 +119,8 @@ public class StartLearningStepDefinition
 		 
 	 }
 
-	
-	@Test(priority=1)
-	@Given("User is on start learning page")
-	public void user_is_on_start_learning_page() throws Throwable
-	{
-		
-		Thread.sleep(3000);
 
-	}
-
-	@Test(priority=2)
+	@Test(priority=8)
 	@When("user selects the courses he wants to add")
 	public void user_selects_the_courses_he_wants_to_add() throws Throwable
 	{
@@ -143,7 +134,7 @@ public class StartLearningStepDefinition
 
 	}
 	
-	@Test(priority=3)
+	@Test(priority=9)
 	@Then("course gets added to the My goals")
 	public void course_gets_added_to_the_my_goals() throws Throwable
 	{
@@ -154,7 +145,7 @@ public class StartLearningStepDefinition
 		Thread.sleep(3000);
 	}
 	
-	@Test(priority=2)
+	@Test(priority=10)
 	@When("^user clicks on the exam type$")
 	public void user_clicks_on_the_exam_type() throws Throwable 
 	{
@@ -172,14 +163,14 @@ public class StartLearningStepDefinition
 		//obj1.DisplayCourse();
 	}
 
-	@Test(priority=3)
+	@Test(priority=11)
 	@Then("^various courses related to exam are displayed$")
 	public void various_courses_related_to_exam_are_displayed() throws Throwable 
 	{
 		Thread.sleep(1000);
 	}
 
-	@Test(priority=2)
+	@Test(priority=12)
 	@When("^user clicks on the course$")
 	public void user_clicks_on_the_course() throws Throwable 
 	{
@@ -189,7 +180,7 @@ public class StartLearningStepDefinition
 			
 	}
 
-	@Test(priority=3)
+	@Test(priority=13)
 	@Then("^user is navigated to select the language$")
 	public void user_is_navigated_to_select_the_language() throws Throwable 
 	{
@@ -209,7 +200,7 @@ public class StartLearningStepDefinition
 		
 	}
 
-	@Test(priority=2)
+	@Test(priority=14)
 	@When("^user clicks on the remove sign on course$")
 	public void user_clicks_on_the_remove_sign_on_course() throws Throwable 
 	{
@@ -218,14 +209,14 @@ public class StartLearningStepDefinition
 		obj1.Warning();
 	}
 
-	@Test(priority=3)
+	@Test(priority=15)
 	@Then("^show the alert msg$")
 	public void show_the_alert_msg() throws Throwable 
 	{
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=4)
+	@Test(priority=16)
 	@Then("^when user clicks on cancel button$")
 	public void when_user_clicks_on_cancel_button() throws Throwable 
 	{
@@ -234,33 +225,46 @@ public class StartLearningStepDefinition
 		obj1.CancelRemoval();
 	}
 
-	@Test(priority=5)
+	@Test(priority=17)
 	@Then("^the course does not get removed$")
 	public void the_course_does_not_get_removed() throws Throwable 
 	{
-		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		Thread.sleep(5000);
+	}
+	
+	@Test(priority=18)
+	@When("^user clicks on the remove sign on course again$")
+	public void user_clicks_on_the_remove_sign_on_course_again() throws Throwable 
+	{
+		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		obj1.Warning();
+		
 	}
 
-	@Test(priority=4)
+	@Test(priority=19)
+	@Then("^the alert msg is shown second time$")
+	public void the_alert_msg_is_shown_second_time() throws Throwable 
+	{
+		Thread.sleep(5000);
+	}
+
+	@Test(priority=20)
 	@Then("^when user clicks on remove button$")
 	public void when_user_clicks_on_remove_button() throws Throwable 
 	{
-		Thread.sleep(3000);
 		StartLearningPageModel obj1 = PageFactory.initElements(driver, StartLearningPageModel.class);
 		obj1.CourseRemoval();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 
-	@Test(priority=5)
+	@Test(priority=21)
 	@Then("^the course gets removed$")
 	public void the_course_gets_removed() throws Throwable 
 	{
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=2)
+	@Test(priority=22)
 	@When("^user clicks on the course in mygoals$")
 	public void user_clicks_on_the_course_in_mygoals() throws Throwable 
 	{
@@ -269,14 +273,14 @@ public class StartLearningStepDefinition
 		obj1.CourseInMygoals();
 	}
 
-	@Test(priority=3)
+	@Test(priority=23)
 	@Then("^user is navigated to course description page$")
 	public void user_is_navigated_to_course_description_page() throws Throwable 
 	{
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=4)
+	@Test(priority=24)
 	@Then("^when user clicks on get subscription$")
 	public void when_user_clicks_on_get_subscription() throws Throwable 
 	{
@@ -291,7 +295,7 @@ public class StartLearningStepDefinition
 		//POMStartLearning obj1 = PageFactory.initElements(driver, POMStartLearning.class);
 		//obj1.SubscribeCourse();
 	}
-	@Test(priority=5)
+	@Test(priority=25)
 	@Then("^user is shown different subscription plans$")
 	public void user_is_shown_different_subscription_plans() throws Throwable 
 	{

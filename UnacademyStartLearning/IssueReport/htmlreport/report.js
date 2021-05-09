@@ -61,419 +61,269 @@ formatter.step({
   "name": "User should be able to login successfully",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 12,
+  "name": "user selects the courses he wants to add",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "course gets added to the My goals",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "user clicks on the exam type",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "various courses related to exam are displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "user clicks on the course",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 17,
+  "name": "user is navigated to select the language",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "user clicks on the remove sign on course",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 19,
+  "name": "show the alert msg",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "when user clicks on cancel button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "the course does not get removed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "user clicks on the remove sign on course again",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 23,
+  "name": "the alert msg is shown second time",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "when user clicks on remove button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "the course gets removed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "user clicks on the course in mygoals",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 27,
+  "name": "user is navigated to course description page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "when user clicks on get subscription",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "user is shown different subscription plans",
+  "keyword": "Then "
+});
 formatter.match({
   "location": "StartLearningStepDefinition.User_is_successfully_logged_into_his_account()"
 });
 formatter.result({
-  "duration": 8605790000,
+  "duration": 8364123500,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_selects_country_code()"
 });
 formatter.result({
-  "duration": 5466731900,
+  "duration": 5448560400,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_enters_registered_phone_number()"
 });
 formatter.result({
-  "duration": 5316385200,
+  "duration": 5299333800,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_click_login_button()"
 });
 formatter.result({
-  "duration": 137231600,
+  "duration": 155376200,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_should_enter_valid_otp()"
 });
 formatter.result({
-  "duration": 1533462500,
+  "duration": 1010649500,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.click_on_verify_otp_button()"
 });
 formatter.result({
-  "duration": 8247675700,
+  "duration": 8258608100,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_should_be_able_to_login_successfully()"
 });
 formatter.result({
-  "duration": 10286843400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 14,
-  "name": "Successfully add courses in My goals",
-  "description": "",
-  "id": "startlearning;successfully-add-courses-in-my-goals",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 13,
-      "name": "@AddCourse"
-    }
-  ]
-});
-formatter.step({
-  "line": 15,
-  "name": "User is on start learning page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 16,
-  "name": "user selects the courses he wants to add",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 17,
-  "name": "course gets added to the My goals",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StartLearningStepDefinition.user_is_on_start_learning_page()"
-});
-formatter.result({
-  "duration": 3011747800,
+  "duration": 10276966700,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_selects_the_courses_he_wants_to_add()"
 });
 formatter.result({
-  "duration": 7056400,
-  "error_message": "java.lang.NullPointerException\r\n\tat java.util.Objects.requireNonNull(Objects.java:203)\r\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:106)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:85)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:45)\r\n\tat stepDefinition.StartLearningStepDefinition.user_selects_the_courses_he_wants_to_add(StartLearningStepDefinition.java:138)\r\n\tat ✽.When user selects the courses he wants to add(src/test/resources/feature/StartLearning.feature:16)\r\n",
-  "status": "failed"
+  "duration": 4310474700,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.course_gets_added_to_the_my_goals()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "Display various courses for exam type",
-  "description": "",
-  "id": "startlearning;display-various-courses-for-exam-type",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@DisplayCourse"
-    }
-  ]
-});
-formatter.step({
-  "line": 21,
-  "name": "User is on start learning page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 22,
-  "name": "user clicks on the exam type",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 23,
-  "name": "various courses related to exam are displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StartLearningStepDefinition.user_is_on_start_learning_page()"
-});
-formatter.result({
-  "duration": 3007035600,
+  "duration": 6181408500,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_exam_type()"
 });
 formatter.result({
-  "duration": 650100,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinition.StartLearningStepDefinition.user_clicks_on_the_exam_type(StartLearningStepDefinition.java:164)\r\n\tat ✽.When user clicks on the exam type(src/test/resources/feature/StartLearning.feature:22)\r\n",
-  "status": "failed"
+  "duration": 3081910100,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.various_courses_related_to_exam_are_displayed()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "Show the course description of selected course",
-  "description": "",
-  "id": "startlearning;show-the-course-description-of-selected-course",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 25,
-      "name": "@CourseLanguage"
-    }
-  ]
-});
-formatter.step({
-  "line": 27,
-  "name": "User is on start learning page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 28,
-  "name": "user clicks on the course",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 29,
-  "name": "user is navigated to select the language",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StartLearningStepDefinition.user_is_on_start_learning_page()"
-});
-formatter.result({
-  "duration": 3012246100,
+  "duration": 1014315300,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_course()"
 });
 formatter.result({
-  "duration": 605800,
-  "error_message": "java.lang.NullPointerException\r\n\tat java.util.Objects.requireNonNull(Objects.java:203)\r\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:106)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:85)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:45)\r\n\tat stepDefinition.StartLearningStepDefinition.user_clicks_on_the_course(StartLearningStepDefinition.java:186)\r\n\tat ✽.When user clicks on the course(src/test/resources/feature/StartLearning.feature:28)\r\n",
-  "status": "failed"
+  "duration": 264033800,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_is_navigated_to_select_the_language()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 32,
-  "name": "Cancel the removal of course from My goals",
-  "description": "",
-  "id": "startlearning;cancel-the-removal-of-course-from-my-goals",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 31,
-      "name": "@CancelRemoval"
-    }
-  ]
-});
-formatter.step({
-  "line": 33,
-  "name": "User is on start learning page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 34,
-  "name": "user clicks on the remove sign on course",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 35,
-  "name": "show the alert msg",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 36,
-  "name": "when user clicks on cancel button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 37,
-  "name": "the course does not get removed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StartLearningStepDefinition.user_is_on_start_learning_page()"
-});
-formatter.result({
-  "duration": 3005397500,
+  "duration": 8192104200,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course()"
 });
 formatter.result({
-  "duration": 5005368100,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat pageObjectModel.StartLearningPageModel.Warning(StartLearningPageModel.java:59)\r\n\tat stepDefinition.StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course(StartLearningStepDefinition.java:218)\r\n\tat ✽.When user clicks on the remove sign on course(src/test/resources/feature/StartLearning.feature:34)\r\n",
-  "status": "failed"
+  "duration": 5172570300,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.show_the_alert_msg()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5000258600,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.when_user_clicks_on_cancel_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3180119000,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.the_course_does_not_get_removed()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 40,
-  "name": "Remove the course from My goals",
-  "description": "",
-  "id": "startlearning;remove-the-course-from-my-goals",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 39,
-      "name": "@RemoveCourse"
-    }
-  ]
-});
-formatter.step({
-  "line": 41,
-  "name": "User is on start learning page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 42,
-  "name": "user clicks on the remove sign on course",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 43,
-  "name": "show the alert msg",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 44,
-  "name": "when user clicks on remove button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 45,
-  "name": "the course gets removed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StartLearningStepDefinition.user_is_on_start_learning_page()"
-});
-formatter.result({
-  "duration": 3005273900,
+  "duration": 5007364900,
   "status": "passed"
 });
 formatter.match({
-  "location": "StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course()"
+  "location": "StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course_again()"
 });
 formatter.result({
-  "duration": 5007043500,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat pageObjectModel.StartLearningPageModel.Warning(StartLearningPageModel.java:59)\r\n\tat stepDefinition.StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course(StartLearningStepDefinition.java:218)\r\n\tat ✽.When user clicks on the remove sign on course(src/test/resources/feature/StartLearning.feature:42)\r\n",
-  "status": "failed"
+  "duration": 154965400,
+  "status": "passed"
 });
 formatter.match({
-  "location": "StartLearningStepDefinition.show_the_alert_msg()"
+  "location": "StartLearningStepDefinition.the_alert_msg_is_shown_second_time()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5000492300,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.when_user_clicks_on_remove_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 174308600,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.the_course_gets_removed()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 48,
-  "name": "Show different subscription options",
-  "description": "",
-  "id": "startlearning;show-different-subscription-options",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 47,
-      "name": "@GetSubs"
-    }
-  ]
-});
-formatter.step({
-  "line": 49,
-  "name": "User is on start learning page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 50,
-  "name": "user clicks on the course in mygoals",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 51,
-  "name": "user is navigated to course description page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 52,
-  "name": "when user clicks on get subscription",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 53,
-  "name": "user is shown different subscription plans",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StartLearningStepDefinition.user_is_on_start_learning_page()"
-});
-formatter.result({
-  "duration": 3001404700,
+  "duration": 5013946300,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_course_in_mygoals()"
 });
 formatter.result({
-  "duration": 5011153100,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat pageObjectModel.StartLearningPageModel.CourseInMygoals(StartLearningPageModel.java:51)\r\n\tat stepDefinition.StartLearningStepDefinition.user_clicks_on_the_course_in_mygoals(StartLearningStepDefinition.java:269)\r\n\tat ✽.When user clicks on the course in mygoals(src/test/resources/feature/StartLearning.feature:50)\r\n",
-  "status": "failed"
+  "duration": 5240346000,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_is_navigated_to_course_description_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5012251800,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.when_user_clicks_on_get_subscription()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5558459900,
+  "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_is_shown_different_subscription_plans()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5733827400,
+  "status": "passed"
 });
 });

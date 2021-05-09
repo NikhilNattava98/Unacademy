@@ -34,7 +34,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 9, 2021 12:36:18 AM</span>
+                    <span class='label suite-start-time blue darken-3'>May 9, 2021 10:55:53 AM</span>
 				</a>
 			</li>
 			<li>
@@ -74,8 +73,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -90,12 +87,6 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@StartLearning</a></li>
 					<li><a href='#'>@Login</a></li>
-					<li><a href='#'>@AddCourse</a></li>
-					<li><a href='#'>@DisplayCourse</a></li>
-					<li><a href='#'>@CourseLanguage</a></li>
-					<li><a href='#'>@CancelRemoval</a></li>
-					<li><a href='#'>@RemoveCourse</a></li>
-					<li><a href='#'>@GetSubs</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -143,10 +134,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -158,10 +149,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='14.286%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='85.714%'>6</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -173,10 +164,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='41.935%'><span class='strong'>13</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>25</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='19.355%'>6</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='38.71%'>12</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -190,18 +181,18 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>StartLearning</span>
-						<span class='test-time'>May 9, 2021 12:36:18 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>May 9, 2021 10:55:53 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Login</span>
 	</div>
-	<span class='duration right label'>0h 0m 39s+724ms</span>
+	<span class='duration right label'>0h 1m 52s+331ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User is on Unacademy Home page</span>
@@ -263,306 +254,148 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='10' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@AddCourse</span>
-	</div>
-	<span class='duration right label'>0h 0m 3s+46ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Successfully add courses in My goals</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='11' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on start learning page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='12' class='node when fail' status='fail'>
+		<li test-id='10' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When user selects the courses he wants to add</span>
-				<div class='pre'><textarea>java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at stepDefinition.StartLearningStepDefinition.user_selects_the_courses_he_wants_to_add(StartLearningStepDefinition.java:138)
-	at ?.When user selects the courses he wants to add(src/test/resources/feature/StartLearning.feature:16)
-</textarea></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='13' class='node then skip' status='skip'>
+		<li test-id='11' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then course gets added to the My goals</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='14' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@DisplayCourse</span>
-	</div>
-	<span class='duration right label'>0h 0m 3s+24ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Display various courses for exam type</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='15' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on start learning page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='16' class='node when fail' status='fail'>
+		<li test-id='12' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When user clicks on the exam type</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_exam_type(StartLearningStepDefinition.java:164)
-	at ?.When user clicks on the exam type(src/test/resources/feature/StartLearning.feature:22)
-</pre></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='17' class='node then skip' status='skip'>
+		<li test-id='13' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then various courses related to exam are displayed</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='18' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@CourseLanguage</span>
-	</div>
-	<span class='duration right label'>0h 0m 3s+30ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Show the course description of selected course</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='19' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on start learning page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='20' class='node when fail' status='fail'>
+		<li test-id='14' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When user clicks on the course</span>
-				<div class='pre'><textarea>java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_course(StartLearningStepDefinition.java:186)
-	at ?.When user clicks on the course(src/test/resources/feature/StartLearning.feature:28)
-</textarea></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='21' class='node then skip' status='skip'>
+		<li test-id='15' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then user is navigated to select the language</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='22' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@CancelRemoval</span>
-	</div>
-	<span class='duration right label'>0h 0m 8s+33ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Cancel the removal of course from My goals</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='23' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on start learning page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='24' class='node when fail' status='fail'>
+		<li test-id='16' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When user clicks on the remove sign on course</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pageObjectModel.StartLearningPageModel.Warning(StartLearningPageModel.java:59)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course(StartLearningStepDefinition.java:218)
-	at ?.When user clicks on the remove sign on course(src/test/resources/feature/StartLearning.feature:34)
-</pre></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='25' class='node then skip' status='skip'>
+		<li test-id='17' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then show the alert msg</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='26' class='node and skip' status='skip'>
+		<li test-id='18' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And when user clicks on cancel button</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='27' class='node then skip' status='skip'>
+		<li test-id='19' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the course does not get removed</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='28' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@RemoveCourse</span>
-	</div>
-	<span class='duration right label'>0h 0m 8s+28ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Remove the course from My goals</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='29' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on start learning page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='30' class='node when fail' status='fail'>
+		<li test-id='20' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When user clicks on the remove sign on course</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pageObjectModel.StartLearningPageModel.Warning(StartLearningPageModel.java:59)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course(StartLearningStepDefinition.java:218)
-	at ?.When user clicks on the remove sign on course(src/test/resources/feature/StartLearning.feature:42)
-</pre></div>
+			<span class="bdd-step-name">When user clicks on the remove sign on course again</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='31' class='node then skip' status='skip'>
+		<li test-id='21' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then show the alert msg</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then the alert msg is shown second time</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='32' class='node and skip' status='skip'>
+		<li test-id='22' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And when user clicks on remove button</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='33' class='node then skip' status='skip'>
+		<li test-id='23' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the course gets removed</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='34' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@GetSubs</span>
-	</div>
-	<span class='duration right label'>0h 0m 8s+32ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Show different subscription options</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='35' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on start learning page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='36' class='node when fail' status='fail'>
+		<li test-id='24' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When user clicks on the course in mygoals</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pageObjectModel.StartLearningPageModel.CourseInMygoals(StartLearningPageModel.java:51)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_course_in_mygoals(StartLearningStepDefinition.java:269)
-	at ?.When user clicks on the course in mygoals(src/test/resources/feature/StartLearning.feature:50)
-</pre></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='37' class='node then skip' status='skip'>
+		<li test-id='25' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then user is navigated to course description page</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='38' class='node and skip' status='skip'>
+		<li test-id='26' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And when user clicks on get subscription</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='39' class='node then skip' status='skip'>
+		<li test-id='27' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then user is shown different subscription plans</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -623,13 +456,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@StartLearning</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -644,9 +477,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 12:36:18 AM</td>
+										<td>May 9, 2021 10:55:53 AM</td>
 										<td class='linked' test-id='1'>StartLearning</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -678,213 +511,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2021 12:36:18 AM</td>
+										<td>May 9, 2021 10:55:53 AM</td>
 										<td class='linked' test-id='2'>StartLearning.User is on Unacademy Home page</td>
 										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@AddCourse</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 12:36:58 AM</td>
-										<td class='linked' test-id='10'>StartLearning.Successfully add courses in My goals</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@DisplayCourse</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 12:37:01 AM</td>
-										<td class='linked' test-id='14'>StartLearning.Display various courses for exam type</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@CourseLanguage</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 12:37:04 AM</td>
-										<td class='linked' test-id='18'>StartLearning.Show the course description of selected course</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@CancelRemoval</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 12:37:07 AM</td>
-										<td class='linked' test-id='22'>StartLearning.Cancel the removal of course from My goals</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@RemoveCourse</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 12:37:15 AM</td>
-										<td class='linked' test-id='28'>StartLearning.Remove the course from My goals</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@GetSubs</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 9, 2021 12:37:23 AM</td>
-										<td class='linked' test-id='34'>StartLearning.Show different subscription options</td>
-										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -903,130 +532,6 @@
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.NullPointerException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>May 9, 2021 12:37:01 AM</td>
-                                                        <td class='linked' test-id='12'>StartLearning.Successfully add courses in My goals.When user selects the courses he wants to add</td>
-                                                        <td><pre><textarea>java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at stepDefinition.StartLearningStepDefinition.user_selects_the_courses_he_wants_to_add(StartLearningStepDefinition.java:138)
-	at ?.When user selects the courses he wants to add(src/test/resources/feature/StartLearning.feature:16)
-</textarea></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>May 9, 2021 12:37:04 AM</td>
-                                                        <td class='linked' test-id='16'>StartLearning.Display various courses for exam type.When user clicks on the exam type</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_exam_type(StartLearningStepDefinition.java:164)
-	at ?.When user clicks on the exam type(src/test/resources/feature/StartLearning.feature:22)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>May 9, 2021 12:37:07 AM</td>
-                                                        <td class='linked' test-id='20'>StartLearning.Show the course description of selected course.When user clicks on the course</td>
-                                                        <td><pre><textarea>java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_course(StartLearningStepDefinition.java:186)
-	at ?.When user clicks on the course(src/test/resources/feature/StartLearning.feature:28)
-</textarea></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>May 9, 2021 12:37:10 AM</td>
-                                                        <td class='linked' test-id='24'>StartLearning.Cancel the removal of course from My goals.When user clicks on the remove sign on course</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pageObjectModel.StartLearningPageModel.Warning(StartLearningPageModel.java:59)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course(StartLearningStepDefinition.java:218)
-	at ?.When user clicks on the remove sign on course(src/test/resources/feature/StartLearning.feature:34)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>May 9, 2021 12:37:18 AM</td>
-                                                        <td class='linked' test-id='30'>StartLearning.Remove the course from My goals.When user clicks on the remove sign on course</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pageObjectModel.StartLearningPageModel.Warning(StartLearningPageModel.java:59)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course(StartLearningStepDefinition.java:218)
-	at ?.When user clicks on the remove sign on course(src/test/resources/feature/StartLearning.feature:42)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>May 9, 2021 12:37:26 AM</td>
-                                                        <td class='linked' test-id='36'>StartLearning.Show different subscription options.When user clicks on the course in mygoals</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pageObjectModel.StartLearningPageModel.CourseInMygoals(StartLearningPageModel.java:51)
-	at stepDefinition.StartLearningStepDefinition.user_clicks_on_the_course_in_mygoals(StartLearningStepDefinition.java:269)
-	at ?.When user clicks on the course in mygoals(src/test/resources/feature/StartLearning.feature:50)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -1042,31 +547,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>31</div>
+					<div class='panel-lead'>25</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 9, 2021 12:36:18 AM</div>
+					<div class='panel-lead'>May 9, 2021 10:55:53 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 9, 2021 12:37:31 AM</div>
+			 		<div class='panel-lead'>May 9, 2021 10:57:46 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>73,392ms</div>
+					<div class='panel-lead'>112,734ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1083,11 +588,11 @@
 						</tr>
 						<tr>
 							<td>@StartLearning</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
@@ -1097,60 +602,6 @@
 							<td>0</td>
 							<td>
 									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@AddCourse</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@DisplayCourse</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@CourseLanguage</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@CancelRemoval</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@RemoveCourse</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@GetSubs</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
 							</td>
 						</tr>
 					</table>
@@ -1166,31 +617,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
 				passChild: 1,
-				failChild: 6,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 6,
+				exceptionsChild: 0,
 				
-				passGrandChild: 13,
-				failGrandChild: 6,
+				passGrandChild: 25,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 12,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 18,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		
