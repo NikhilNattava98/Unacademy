@@ -22,7 +22,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 3,
-      "name": "@Login"
+      "name": "@COURSES"
     }
   ]
 });
@@ -155,175 +155,175 @@ formatter.match({
   "location": "StartLearningStepDefinition.User_is_successfully_logged_into_his_account()"
 });
 formatter.result({
-  "duration": 8364123500,
+  "duration": 10325117600,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_selects_country_code()"
 });
 formatter.result({
-  "duration": 5448560400,
+  "duration": 5611092000,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_enters_registered_phone_number()"
 });
 formatter.result({
-  "duration": 5299333800,
+  "duration": 5210848500,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_click_login_button()"
 });
 formatter.result({
-  "duration": 155376200,
+  "duration": 138842800,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_should_enter_valid_otp()"
 });
 formatter.result({
-  "duration": 1010649500,
+  "duration": 951425700,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.click_on_verify_otp_button()"
 });
 formatter.result({
-  "duration": 8258608100,
+  "duration": 8251745800,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_should_be_able_to_login_successfully()"
 });
 formatter.result({
-  "duration": 10276966700,
+  "duration": 10290483300,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_selects_the_courses_he_wants_to_add()"
 });
 formatter.result({
-  "duration": 4310474700,
+  "duration": 4543060500,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.course_gets_added_to_the_my_goals()"
 });
 formatter.result({
-  "duration": 6181408500,
+  "duration": 6162650200,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_exam_type()"
 });
 formatter.result({
-  "duration": 3081910100,
+  "duration": 3082238700,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.various_courses_related_to_exam_are_displayed()"
 });
 formatter.result({
-  "duration": 1014315300,
+  "duration": 1010863700,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_course()"
 });
 formatter.result({
-  "duration": 264033800,
+  "duration": 268061400,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_is_navigated_to_select_the_language()"
 });
 formatter.result({
-  "duration": 8192104200,
+  "duration": 8181674500,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course()"
 });
 formatter.result({
-  "duration": 5172570300,
+  "duration": 5207157100,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.show_the_alert_msg()"
 });
 formatter.result({
-  "duration": 5000258600,
+  "duration": 5010296600,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.when_user_clicks_on_cancel_button()"
 });
 formatter.result({
-  "duration": 3180119000,
+  "duration": 3209806200,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.the_course_does_not_get_removed()"
 });
 formatter.result({
-  "duration": 5007364900,
+  "duration": 5013627600,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_remove_sign_on_course_again()"
 });
 formatter.result({
-  "duration": 154965400,
+  "duration": 146812900,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.the_alert_msg_is_shown_second_time()"
 });
 formatter.result({
-  "duration": 5000492300,
+  "duration": 5010780900,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.when_user_clicks_on_remove_button()"
 });
 formatter.result({
-  "duration": 174308600,
+  "duration": 185620800,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.the_course_gets_removed()"
 });
 formatter.result({
-  "duration": 5013946300,
+  "duration": 5009272900,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_clicks_on_the_course_in_mygoals()"
 });
 formatter.result({
-  "duration": 5240346000,
+  "duration": 5248111400,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_is_navigated_to_course_description_page()"
 });
 formatter.result({
-  "duration": 5012251800,
+  "duration": 5001580600,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.when_user_clicks_on_get_subscription()"
 });
 formatter.result({
-  "duration": 5558459900,
+  "duration": 5655440700,
   "status": "passed"
 });
 formatter.match({
   "location": "StartLearningStepDefinition.user_is_shown_different_subscription_plans()"
 });
 formatter.result({
-  "duration": 5733827400,
+  "duration": 5719552500,
   "status": "passed"
 });
 });

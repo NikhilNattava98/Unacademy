@@ -85,10 +85,10 @@ public class StartLearningStepDefinition
 	 public void user_should_enter_valid_otp() throws Throwable 
 	 {
 		 LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
-		// Thread.sleep(25000);
-		  WebDriverWait Mywait0=new WebDriverWait(driver,5);
-		  Mywait0.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='One time password']")));
-		 obj.otpNumber("826178");
+		 // Thread.sleep(25000);
+		 WebDriverWait Mywait0=new WebDriverWait(driver,5);
+		 Mywait0.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='One time password']")));
+		 obj.otpNumber("513524");
 	 }
 	 
 	 @Test(priority=6)

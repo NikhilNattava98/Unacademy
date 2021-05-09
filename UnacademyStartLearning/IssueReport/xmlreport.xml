@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="112.106775">
-<testcase classname="StartLearning" name="User is on Unacademy Home page" time="112.106775">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="114.446165">
+<testcase classname="StartLearning" name="User is on Unacademy Home page" time="114.446165">
 <system-out><![CDATA[Given User is successfully logged into his account..........................passed
 When User selects country code..............................................passed
 And User enters registered phone number.....................................passed

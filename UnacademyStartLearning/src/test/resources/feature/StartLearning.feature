@@ -1,6 +1,6 @@
 @StartLearning 
 Feature: StartLearning
-@Login
+@COURSES
 Scenario: User is on Unacademy Home page
 Given User is successfully logged into his account
 When User selects country code
