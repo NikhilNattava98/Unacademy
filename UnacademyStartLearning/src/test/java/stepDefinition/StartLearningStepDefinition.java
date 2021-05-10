@@ -88,7 +88,7 @@ public class StartLearningStepDefinition
 		 // Thread.sleep(25000);
 		 WebDriverWait Mywait0=new WebDriverWait(driver,5);
 		 Mywait0.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='One time password']")));
-		 obj.otpNumber("513524");
+		 obj.otpNumber("986235");
 	 }
 	 
 	 @Test(priority=6)
@@ -98,6 +98,10 @@ public class StartLearningStepDefinition
 		 LoginPageModel obj = PageFactory.initElements(driver, LoginPageModel.class );
 		 obj.VerifyOtp();
 		 Thread.sleep(3000);
+		 
+		 String Expected = "https://unacademy.com/";
+		 String Actual = driver.getCurrentUrl();
+		 Assert.assertEquals(Expected, Actual);
 	    
 	 }
 	 
@@ -116,7 +120,11 @@ public class StartLearningStepDefinition
 		// WebDriverWait Mywait7=new WebDriverWait(driver,5);
 	    // Mywait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/manage-goals']//button[@aria-label='Start learning'][normalize-space()='Start learning']")));
 		 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[2]/a[1]/button[1]")).click();
-		 
+		 Thread.sleep(3000);
+		 String Expected1 = "https://unacademy.com/manage-goals";
+		 String Actual1 = driver.getCurrentUrl();
+		 Assert.assertEquals(Expected1, Actual1);
+	    
 	 }
 
 
@@ -278,6 +286,9 @@ public class StartLearningStepDefinition
 	public void user_is_navigated_to_course_description_page() throws Throwable 
 	{
 		Thread.sleep(5000);
+		String Expected2 = "https://unacademy.com/goal/bank-exams/RTPSX";
+		String Actual2 = driver.getCurrentUrl();
+		Assert.assertEquals(Expected2, Actual2);
 	}
 
 	@Test(priority=24)
@@ -299,6 +310,10 @@ public class StartLearningStepDefinition
 	@Then("^user is shown different subscription plans$")
 	public void user_is_shown_different_subscription_plans() throws Throwable 
 	{
+		Thread.sleep(3000);
+		String Expected3 = "https://unacademy.com/goal/bank-exams/RTPSX/subscribe";
+		String Actual3 = driver.getCurrentUrl();
+		Assert.assertEquals(Expected3, Actual3);
 		
 		Thread.sleep(5000);
 		driver.close();
