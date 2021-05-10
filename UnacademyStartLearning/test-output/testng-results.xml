@@ -1,35 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="116051" started-at="2021-05-09T09:57:08Z" finished-at="2021-05-09T09:59:04Z">
+  <suite name="Default suite" duration-ms="120414" started-at="2021-05-10T07:38:27Z" finished-at="2021-05-10T07:40:28Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.OutputRunner@49ec71f8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="116051" started-at="2021-05-09T09:57:08Z" finished-at="2021-05-09T09:59:04Z">
-      <class name="runner.OutputRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.OutputRunner@49ec71f8]" name="setUpClass" is-config="true" duration-ms="373" started-at="2021-05-09T09:57:08Z" finished-at="2021-05-09T09:57:08Z">
+    <test name="Default test" duration-ms="120414" started-at="2021-05-10T07:38:27Z" finished-at="2021-05-10T07:40:28Z">
+      <class name="stepDefinition.StartLearningStepDefinition">
+        <test-method status="PASS" signature="User_is_successfully_logged_into_his_account()[pri:1, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="User_is_successfully_logged_into_his_account" duration-ms="8675" started-at="2021-05-10T07:38:28Z" finished-at="2021-05-10T07:38:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.OutputRunner@49ec71f8]" name="feature" duration-ms="114932" started-at="2021-05-09T09:57:09Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-05-09T09:59:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[StartLearning]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- User_is_successfully_logged_into_his_account -->
+        <test-method status="PASS" signature="user_selects_country_code()[pri:2, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_selects_country_code" duration-ms="5697" started-at="2021-05-10T07:38:36Z" finished-at="2021-05-10T07:38:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.OutputRunner@49ec71f8]" name="tearDownClass" is-config="true" duration-ms="609" started-at="2021-05-09T09:59:03Z" finished-at="2021-05-09T09:59:04Z">
+        </test-method> <!-- user_selects_country_code -->
+        <test-method status="PASS" signature="user_enters_registered_phone_number()[pri:3, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_enters_registered_phone_number" duration-ms="5385" started-at="2021-05-10T07:38:42Z" finished-at="2021-05-10T07:38:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.OutputRunner -->
+        </test-method> <!-- user_enters_registered_phone_number -->
+        <test-method status="PASS" signature="user_click_login_button()[pri:4, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_click_login_button" duration-ms="182" started-at="2021-05-10T07:38:47Z" finished-at="2021-05-10T07:38:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_click_login_button -->
+        <test-method status="PASS" signature="user_should_enter_valid_otp()[pri:5, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_should_enter_valid_otp" duration-ms="2707" started-at="2021-05-10T07:38:47Z" finished-at="2021-05-10T07:38:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_should_enter_valid_otp -->
+        <test-method status="PASS" signature="click_on_verify_otp_button()[pri:6, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="click_on_verify_otp_button" duration-ms="8303" started-at="2021-05-10T07:38:50Z" finished-at="2021-05-10T07:38:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_on_verify_otp_button -->
+        <test-method status="PASS" signature="user_should_be_able_to_login_successfully()[pri:7, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_should_be_able_to_login_successfully" duration-ms="13393" started-at="2021-05-10T07:38:59Z" finished-at="2021-05-10T07:39:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_should_be_able_to_login_successfully -->
+        <test-method status="PASS" signature="user_selects_the_courses_he_wants_to_add()[pri:8, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_selects_the_courses_he_wants_to_add" duration-ms="3381" started-at="2021-05-10T07:39:12Z" finished-at="2021-05-10T07:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_selects_the_courses_he_wants_to_add -->
+        <test-method status="PASS" signature="course_gets_added_to_the_my_goals()[pri:9, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="course_gets_added_to_the_my_goals" duration-ms="6222" started-at="2021-05-10T07:39:15Z" finished-at="2021-05-10T07:39:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- course_gets_added_to_the_my_goals -->
+        <test-method status="PASS" signature="user_clicks_on_the_exam_type()[pri:10, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_clicks_on_the_exam_type" duration-ms="3084" started-at="2021-05-10T07:39:22Z" finished-at="2021-05-10T07:39:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_the_exam_type -->
+        <test-method status="PASS" signature="various_courses_related_to_exam_are_displayed()[pri:11, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="various_courses_related_to_exam_are_displayed" duration-ms="1003" started-at="2021-05-10T07:39:25Z" finished-at="2021-05-10T07:39:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- various_courses_related_to_exam_are_displayed -->
+        <test-method status="PASS" signature="user_clicks_on_the_course()[pri:12, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_clicks_on_the_course" duration-ms="313" started-at="2021-05-10T07:39:26Z" finished-at="2021-05-10T07:39:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_the_course -->
+        <test-method status="PASS" signature="user_is_navigated_to_select_the_language()[pri:13, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_is_navigated_to_select_the_language" duration-ms="8228" started-at="2021-05-10T07:39:26Z" finished-at="2021-05-10T07:39:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_navigated_to_select_the_language -->
+        <test-method status="PASS" signature="user_clicks_on_the_remove_sign_on_course()[pri:14, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_clicks_on_the_remove_sign_on_course" duration-ms="5336" started-at="2021-05-10T07:39:34Z" finished-at="2021-05-10T07:39:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_the_remove_sign_on_course -->
+        <test-method status="PASS" signature="show_the_alert_msg()[pri:15, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="show_the_alert_msg" duration-ms="5016" started-at="2021-05-10T07:39:39Z" finished-at="2021-05-10T07:39:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- show_the_alert_msg -->
+        <test-method status="PASS" signature="when_user_clicks_on_cancel_button()[pri:16, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="when_user_clicks_on_cancel_button" duration-ms="3260" started-at="2021-05-10T07:39:45Z" finished-at="2021-05-10T07:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- when_user_clicks_on_cancel_button -->
+        <test-method status="PASS" signature="the_course_does_not_get_removed()[pri:17, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="the_course_does_not_get_removed" duration-ms="5003" started-at="2021-05-10T07:39:48Z" finished-at="2021-05-10T07:39:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_course_does_not_get_removed -->
+        <test-method status="PASS" signature="user_clicks_on_the_remove_sign_on_course_again()[pri:18, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_clicks_on_the_remove_sign_on_course_again" duration-ms="202" started-at="2021-05-10T07:39:53Z" finished-at="2021-05-10T07:39:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_the_remove_sign_on_course_again -->
+        <test-method status="PASS" signature="the_alert_msg_is_shown_second_time()[pri:19, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="the_alert_msg_is_shown_second_time" duration-ms="5006" started-at="2021-05-10T07:39:53Z" finished-at="2021-05-10T07:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_alert_msg_is_shown_second_time -->
+        <test-method status="PASS" signature="when_user_clicks_on_remove_button()[pri:20, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="when_user_clicks_on_remove_button" duration-ms="225" started-at="2021-05-10T07:39:58Z" finished-at="2021-05-10T07:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- when_user_clicks_on_remove_button -->
+        <test-method status="PASS" signature="the_course_gets_removed()[pri:21, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="the_course_gets_removed" duration-ms="5009" started-at="2021-05-10T07:39:58Z" finished-at="2021-05-10T07:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_course_gets_removed -->
+        <test-method status="PASS" signature="user_clicks_on_the_course_in_mygoals()[pri:22, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_clicks_on_the_course_in_mygoals" duration-ms="5298" started-at="2021-05-10T07:40:03Z" finished-at="2021-05-10T07:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_clicks_on_the_course_in_mygoals -->
+        <test-method status="PASS" signature="user_is_navigated_to_course_description_page()[pri:23, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_is_navigated_to_course_description_page" duration-ms="5027" started-at="2021-05-10T07:40:09Z" finished-at="2021-05-10T07:40:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_navigated_to_course_description_page -->
+        <test-method status="PASS" signature="when_user_clicks_on_get_subscription()[pri:24, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="when_user_clicks_on_get_subscription" duration-ms="5663" started-at="2021-05-10T07:40:14Z" finished-at="2021-05-10T07:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- when_user_clicks_on_get_subscription -->
+        <test-method status="PASS" signature="user_is_shown_different_subscription_plans()[pri:25, instance:stepDefinition.StartLearningStepDefinition@222545dc]" name="user_is_shown_different_subscription_plans" duration-ms="8665" started-at="2021-05-10T07:40:19Z" finished-at="2021-05-10T07:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_is_shown_different_subscription_plans -->
+      </class> <!-- stepDefinition.StartLearningStepDefinition -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
